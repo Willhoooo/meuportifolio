@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
     background: #f4f4f4;
@@ -28,7 +30,7 @@ h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
 }
-.project {
+.projects {
     margin-bottom: 1rem;
     padding: 1rem;
     border: 1px solid #ddd;
