@@ -39,7 +39,7 @@ footer {
     padding: 1rem;
     background: #0a4dd7;
     color: #fff;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
