@@ -1,53 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-body {
-    font-family: "Nunito", sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
     background: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
+
 header {
     background: #0a4dd7;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
+
+nav {
+    margin-top: 0.5rem;
+}
+
 nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
+
+nav a:hover {
+    color: #d3d3d3;
+}
+
 .container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 2rem;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+
 h2 {
+    font-size: 1.8rem;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
-}
-.projects {
     margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
+
+/* Área de habilidades */
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #ffffff;
+    width: 280px;
+    min-height: 340px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    aspect-ratio: 512 / 512;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Área de projetos */
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.projeto {
+    background-color: #ffffff;
+    width: 280px;
+    min-height: 340px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projeto img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 750 / 444;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.projeto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.projeto p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.projeto button {
+    background-color: #2192FF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.projeto button:hover {
+    background-color: #186fce;
+}
+
+.contacts {
+    margin-top: 1rem;
+}
+
+.contacts a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5rem;
+    color: #0a4dd7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contacts a:hover {
+    color: #063b9c;
+}
+
+.contacts i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
     background: #0a4dd7;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-.contacts a {
-    display: inline-block;
-    margin: 0 0.5rem;
-    color: #333;
-    text-decoration: none;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
